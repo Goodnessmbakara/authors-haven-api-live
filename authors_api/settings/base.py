@@ -93,9 +93,9 @@ DATABASES['default']["ATOMC_REQUESTS"] = True
 
 PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.Argon2PasswordHasher',
-    'django.contrib.auth.hashers.PBKDF2PasswordHaser',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
-    'django.contrib.auth.hashers.BCryptsha256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
 ]
 
 
@@ -136,7 +136,7 @@ SITE_ID = 1
 
 ADMIN_URL = "supersecret/"
 
-ADMINS = [("""Goodness Mbakara"""), "api.goodnessmbakara@gmail.com"]
+ADMINS = [("""Goodness Mbakara"""), "mbakaragoodness2003@gmail.com"]
 
 MANAGERS = ADMINS
 
@@ -161,6 +161,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CORS_URLS_REGEX = r"^/api/.*$"
+
+AUTH_USER_MODEL = "users.User"
 
 LOGGING = {
     "version":1,
