@@ -172,6 +172,10 @@ CELERY_ACCEPT_CONTENT = ["json"]
 CELERY_TASK_SERIALIZER = "json"
 CELERY_RESULT_SERIALIZER = "json"
 
+REST_FRAMEWORK  =   {
+    "EXCEPTION_HANDLER":"core-apps.common.exceptions.common_exception_handler",
+    "NON_FIELD_ERROR_KEY":"error"
+}
 
 LOGGING = {
     "version":1,
