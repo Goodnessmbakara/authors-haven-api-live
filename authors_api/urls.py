@@ -38,6 +38,8 @@ urlpatterns = [
     path("redoc/", schema_view.with_ui("redoc", cache_timeout=0),
          name="shema-redoc"),
     path(settings.ADMIN_URL, admin.site.urls),
+    path("api/v1/auth/", include("djoser.urls")),
+    path("api/v1/auth/", include("djoser.urls.jwt")),
 ]
 
 admin.site.site_header = "Authors Haven API Admin"
