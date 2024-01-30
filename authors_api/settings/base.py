@@ -46,9 +46,13 @@ THIRD_PARTY_APPS = [
     'djcelery_email',
     'djoser',
     'rest_framework_simplejwt',
+    'haystack',
+    'drf_haystack',
 ]
 
-LOCAL_APPS = ['core_apps.common', 'core_apps.profiles', 'core_apps.users']
+LOCAL_APPS = ['core_apps.common', 'core_apps.profiles', 'core_apps.users', 'core_apps.articles', 'core_apps.favorites',
+              'core_apps.reactions', 'core_apps.ratings', 'core_apps.comments', 'core_apps.search'
+              ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
