@@ -1,3 +1,5 @@
+DATABASE_URL=postgres://abba:admin123456@127.0.0.1:5432/authors-live
+
 CELERY_BROKER=redis://redis:6379/0
 CELERY_BACKEND=redis://redis:6379/0
 
@@ -8,3 +10,5 @@ CELERY_FLOWER_USER=admin
 CELERY_FLOWER_PASSWORD=admin123456
 
 SIGNING_KEY=8bWj7EuGJsQZmdGvJfLAbh4LJhjYrI86_L5RyUXjvrDmLyUbWdM
+
+

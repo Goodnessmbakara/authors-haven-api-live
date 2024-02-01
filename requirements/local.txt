@@ -12,3 +12,11 @@ isort==5.9.3
 argh==0.26.2
 pyYAML==6.0
 watchdog==2.1.6
+
+pytest-django==4.5.2
+
+pytest-factoryboy==2.1.0
+
+Faker==11.3.0
+
+pytest-cov==3.0.0
