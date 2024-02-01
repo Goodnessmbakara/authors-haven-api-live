@@ -39,7 +39,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         return f"{first_name} {last_name}"
 
     def get_profile_photo(self, obj):
-        return obj.profile_photo.url 
+        return obj.profile_photo.url
 
     def get_following(self, instance):
         request = self.context.get("request", None)

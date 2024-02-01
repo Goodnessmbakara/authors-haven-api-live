@@ -1,0 +1,9 @@
+[tool.black]
+extend-exclude = '''
+/ (
+    | .authors
+)/
+'''
+
+[tool.isort]
+profile = "black"

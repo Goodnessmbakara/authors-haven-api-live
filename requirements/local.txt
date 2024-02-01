@@ -4,6 +4,10 @@ psycopg2-binary==2.9.9
 
 flake8==4.0.1
 black==21.12b0
+click==8.1.7
+click-didyoumean==0.3.0
+click-plugins==1.1.1
+click-repl==0.3.0
 isort==5.9.3
 argh==0.26.2
 pyYAML==6.0
